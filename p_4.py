@@ -16,5 +16,4 @@ def Key_Stats(gather = "Total Debt/Equity (mrq)"):
                 unix_time = time.mktime(date_stamp.timetuple())
                 print(date_stamp, unix_time)
                 time.sleep(15)
-
 Key_Stats()
