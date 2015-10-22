@@ -35,7 +35,7 @@ def Key_Stats(gather = "Total Debt/Equity (mrq)"):
     
     ticker_list = []
     
-    for each_dir in stock_list[1:25]:
+    for each_dir in stock_list[1:]:
         each_file = os.listdir(each_dir)
         ticker = each_dir.split("\\")[1]
         ticker_list.append(ticker)
@@ -130,6 +130,6 @@ def Key_Stats(gather = "Total Debt/Equity (mrq)"):
     save = gather.replace(' ','').replace('(','').replace(')','').replace('/','')+'.csv'
     print(save)
     path_d = "C:/Users/Aman Pahariya/Desktop/aman_doc/ML"
-    #df.to_csv(os.path.join(path_d,save))
+    df.to_csv(os.path.join(path_d,save))
 
 Key_Stats()
